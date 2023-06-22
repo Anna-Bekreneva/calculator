@@ -1,0 +1,15 @@
+@import '../vars';
+@import '../mixins';
+
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__button {
+    @include flex-all-center;
+    border-radius: 9px;
+    background-color: $dark-800;
+    text-align: center;
+  }
+}

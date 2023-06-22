@@ -1,0 +1,27 @@
+@import 'vars';
+@import 'src/styles/_mixins.scss';
+
+body {
+  color: $dark-800;
+  font-weight: 400;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.2;
+  background-color: $white;
+}
+
+.button {
+  @include flex-all-center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}

@@ -1,0 +1,11 @@
+@import '../vars';
+
+.calculator {
+  max-width: 390px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 19px;
+  background-color: $dark-900;
+  color: $white;
+  border-radius: 40px;
+}
