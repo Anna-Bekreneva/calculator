@@ -3,13 +3,50 @@
 
 .panel {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
+
+  &__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto 73px;
+  }
+
+  &__items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    &--clear {
+      grid-template-columns: repeat(2, 1fr);
+      color: $red-400;
+    }
+
+    &--operation {
+      font-size: 24px;
+      color: $green-400;
+    }
+
+    &--operation-1 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--operation-2 {
+      grid-template-columns: 1fr;
+    }
+  }
 
   &__button {
     @include flex-all-center;
     border-radius: 9px;
     background-color: $dark-800;
     text-align: center;
+    font-size: 36px;
+    min-height: 75px;
+
+    &--image {
+      @include bg-contain;
+      background-size: 45px;
+    }
   }
 }

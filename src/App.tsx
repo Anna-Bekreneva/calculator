@@ -7,7 +7,9 @@ type StateType = {}
 export class App extends Component<PropsType, StateType> {
     render() {
         return (
-            <Calculator/>
+            <div className="container">
+                <Calculator/>
+            </div>
         )
     }
 }
