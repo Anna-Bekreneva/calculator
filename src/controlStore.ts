@@ -23,8 +23,8 @@ export const controlStore: ControlStoreType = {
         {value: "="},
     ],
     clear: [
-        {value: "C"},
-        {value: "CE", image: {backgroundImage: `url('/src/assets/img/backspace.svg')`}},
+        {value: "CA"},
+        {value: "C", image: {backgroundImage: `url('/src/assets/img/backspace.svg')`}},
     ]
 }
 

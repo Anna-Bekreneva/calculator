@@ -33,7 +33,7 @@ export class Panel extends Component<PropsType, StateType> {
                         {controlStore.numbers.map((button, index) => <Button value={button.value} onClick={this.props.onClick} key={index}/>)}
                     </div>
                     <div className="panel__items panel__items--operation panel__items--operation-2">
-                        {controlStore.operations.slice(5).map((button, index) => <Button value={button.value} onClick={this.props.onClick} key={index}/>)}
+                        {controlStore.operations.slice(4).map((button, index) => <Button value={button.value} onClick={this.props.onClick} key={index}/>)}
                     </div>
                 </div>
             </div>
