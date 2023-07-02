@@ -6,6 +6,7 @@ type PropsType = {
     onClick: (value: string) => void
     clearAll: () => void
 }
+
 type StateType = {}
 
 export class Panel extends Component<PropsType, StateType> {

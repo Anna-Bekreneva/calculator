@@ -1,3 +1,5 @@
+import {clear, operations} from "./utils/variables";
+
 export const controlStore: ControlStoreType = {
     numbers: [
         {value: "7"},
@@ -15,16 +17,16 @@ export const controlStore: ControlStoreType = {
     ],
     operations: [
         {value: "()"},
-        {value: "%"},
-        {value: "/"},
-        {value: "*"},
-        {value: "-"},
-        {value: "+"},
-        {value: "="},
+        {value: operations.percent},
+        {value: operations.divide},
+        {value: operations.multiply},
+        {value: operations.subtraction},
+        {value: operations.fold},
+        {value: operations.equals},
     ],
     clear: [
-        {value: "CA"},
-        {value: "C", image: {backgroundImage: `url('/src/assets/img/backspace.svg')`}},
+        {value: clear.clearAll},
+        {value: clear.backspace},
     ]
 }
 
